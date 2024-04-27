@@ -1,7 +1,9 @@
 {
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "build:functions": "netlify-lambda build functions --config ./webpack.config.netlify.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "dependencies": {
     "axios": "^1.6.7",

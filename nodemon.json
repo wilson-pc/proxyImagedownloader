@@ -1,8 +1,0 @@
-{
-  "execMap": {
-    "watch": ["src"],
-    "ext": ".ts",
-    "ignore": [],
-    "ts": "ts-node --transpiler sucrase/ts-node-plugin"
-  }
-}
