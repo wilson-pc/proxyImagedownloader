@@ -35,7 +35,9 @@ fastify.get('/proxy', async function handler(request, reply) {
 // Run the server!
 try {
     const port = process.env.PORT || 3000;
-    await fastify.listen({ port: Number(port) })
+    fastify.listen({ port: port, host: "0.0.0.0" }).then(() => {
+        console.log("Servicio corriendo en puerto " + port)
+      })
 } catch (err) {
     fastify.log.error(err)
     process.exit(1)
