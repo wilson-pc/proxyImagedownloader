@@ -8,6 +8,7 @@ fastify.get('/', async function handler(request, reply) {
     return { message: "hello" }
 })
 
+console.log("sqiNSOfwejkpioj fweiopfjepwiojf j90OWJKD09QWJ90")
 fastify.get('/proxy', async function handler(request, reply) {
     if (request.query.remote) {
         try {
